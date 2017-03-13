@@ -45,7 +45,7 @@
             "resources": [],
             "dependsOn": [
               "[concat('Microsoft.Resources/deployments/', 'Apache-install')]"
-            
+
                  ]
         },
         {
@@ -767,7 +767,7 @@
                     "id": "[resourceId('Microsoft.Compute/availabilitySets', 'AS-FW')]"
                 },
                 "hardwareProfile": {
-                    "vmSize": "Standard_F4S"
+                    "vmSize": "Standard_D3_v2"
                 },
                 "osProfile": {
                     "computerName": "VM-FW1",
@@ -845,7 +845,7 @@
                     "id": "[resourceId('Microsoft.Compute/availabilitySets', 'AS-FW')]"
                 },
                 "hardwareProfile": {
-                    "vmSize": "Standard_F4S"
+                    "vmSize": "Standard_D3_v2"
                 },
                 "osProfile": {
                     "computerName": "VM-FW2",
@@ -1099,7 +1099,7 @@
         }
       }
     },
-    
+
     {
       "name": "Apache-install",
       "type": "Microsoft.Resources/deployments",
@@ -1117,7 +1117,7 @@
         }
       }
     }
-    
+
     ],
     "outputs": {
         "firewall 1 management": {
